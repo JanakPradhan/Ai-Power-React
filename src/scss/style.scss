@@ -2,8 +2,8 @@ body {
     overflow: hidden;
 }
 
-html{
-    &.dark{
+html {
+    &.dark {
         opacity: .7;
     }
 }
@@ -29,7 +29,9 @@ html{
         &>div {
             margin-right: 50px;
 
-            input{cursor: pointer;}
+            input {
+                cursor: pointer;
+            }
         }
     }
 
@@ -61,6 +63,25 @@ html{
         background-color: #5de1f9;
         left: 0;
         bottom: -36px;
+    }
+
+    .thememode {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateY(-50%);
+        top: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+
+        &.active {
+            transition: all .3s ease-in-out;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
 

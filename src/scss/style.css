@@ -74,6 +74,28 @@ html.dark {
   bottom: -36px;
 }
 
+.header .thememode {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header .thememode.active {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+
 .navbar-nav {
   gap: 55px;
 }

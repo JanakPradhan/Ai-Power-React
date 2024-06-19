@@ -17,12 +17,19 @@ function Header() {
             lightTheme();
             console.log("lg active")
         }
+
+        setTimeout(() => {
+            document.querySelector('.thememode').classList.add('active')
+            setTimeout(() => {
+                document.querySelector('.thememode').classList.remove('active')
+            }, 2000)
+        })
     }
 
     return (
         <>
             <div className="header">
-
+                <p className="thememode">{themeMode.charAt(0).toUpperCase() + themeMode.slice(1).toLowerCase()} Theme Enabled</p>
                 <NavBar />
                 <div className="header__right">
                     <div className="form-check form-switch">
